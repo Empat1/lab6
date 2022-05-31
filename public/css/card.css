@@ -1,0 +1,56 @@
+.card {
+    transition: all 0.3s linear;
+    width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card__link:hover {
+    color: rgb(180, 172, 18);
+}
+
+.card__name:hover {
+    color: rgb(230, 230, 50);
+}
+
+.card__photo {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.card__info * {
+    color: rgb(255, 76, 91);
+    transition: all 0.2s linear;
+}
+
+.card-details {
+    width: 600px;
+}
+
+.card-details__photo {
+    width: 600px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.card-details__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.card-details__info * {
+    color: rgb(255, 76, 91);
+    transition: all 0.2s linear;
+}

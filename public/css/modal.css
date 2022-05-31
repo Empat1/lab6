@@ -1,0 +1,91 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1000px;
+    background-color: rgba(15, 36, 110, 0.8);
+    left: 0;
+    right: 0;
+    transition: .3s;
+    display: block;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal_active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.modal__content {
+    border-radius: 15px;
+    margin: 150px auto;
+    opacity: 0.8;
+    background-color: rgb(102, 102, 204);
+}
+
+.modal__close {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    float: right;
+}
+
+.sign-in__modal {
+    max-width: 250px;
+}
+
+.sign-up__modal {
+    max-width: 300px;
+}
+
+.sign-in__content, .sign-up__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-in__content *, .sign-up__content * {
+    margin-top: 10px;
+}
+
+.sign-in__close, .sign-up__close {
+    position: relative;
+    left: -10px;
+}
+
+
+.form__sign-in__btn, .form__sign-up__btn {
+    margin-bottom: 10px;
+}
+
+.sign-in__form, .sign-up__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input {
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.1s linear;
+}
+
+.input:focus {
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.input:required:valid {
+    background-color: #ddffdd;
+}
+
+.input:required:invalid {
+    background-color: #ffdddd;
+}

@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(79, 102, 106);
+    height: 50px;
+    column-gap: 20px;
+}
+
+.footer__author {
+    transition: all 0.2s linear;
+}
+
+.footer__author:hover {
+    color: rgb(255, 76, 91);
+}
+
+.footer__messengers {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__messengers * {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}

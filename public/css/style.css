@@ -1,0 +1,45 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("modal.css");
+@import url("button.css");
+@import url("card.css");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(37, 40, 80);
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.content {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: baseline;
+}
+
+.more_cards {
+    width: 300px;
+}
+

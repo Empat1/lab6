@@ -1,0 +1,17 @@
+.btn {
+    border: none;
+    border-radius: 10px;
+    font-family: 'M PLUS 2', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(121, 6, 4);
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn:hover {
+    transition: all 0.2s linear;
+    color: rgb(118, 80, 56);
+}

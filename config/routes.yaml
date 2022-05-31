@@ -1,0 +1,43 @@
+#AuthController
+
+register:
+    path:       register/
+    controller: App\Controller\AuthController::register
+    methods:    [POST, GET]
+
+auth:
+    path:       auth/
+    controller: App\Controller\AuthController::auth
+    methods:    [POST, GET]
+
+logout:
+    path:       logout/
+    controller: App\Controller\AuthController::logout
+    methods:    GET
+
+#MainController
+
+start:
+    path:       /
+    controller: App\Controller\MainController::showFirstScreenshots
+    methods:    GET
+
+getScreenshots:
+    path:       cards/
+    controller: App\Controller\MainController::getScreenshots
+    methods:    GET
+
+details:
+    path:       details/
+    controller: App\Controller\MainController::showDetails
+    methods:    GET
+
+screenshotForm:
+    path:       new_screenshot/
+    controller: App\Controller\MainController::showForm
+    methods:    GET
+
+screenshotLoad:
+    path:       save_screenshot/
+    controller: App\Controller\MainController::saveScreen
+    methods:    [POST, GET]

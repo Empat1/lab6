@@ -1,0 +1,67 @@
+
+.header {
+    background: rgb(79, 102, 106) url("../img/header.JPG") no-repeat center bottom;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__login {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.header__logout-btn {
+    text-decoration: none;
+}
+
+.header__add_screen-btn {
+    text-decoration: none;
+}
+
+.header__title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.header__title a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.header__title a:hover {
+    color: darkslateblue;
+}
+
+.header__buttons {
+    display: flex;
+    justify-content: right;
+    flex: 150px;
+    margin-right: 15px;
+}
+
+.header__sign-up-btn {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .header__title {
+        margin: 0 auto;
+    }
+
+    .header__buttons {
+        margin: 0 auto 10px;
+    }
+}
